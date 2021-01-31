@@ -8,13 +8,9 @@ blocks:
   - name: build image
     task:
       jobs:
-        - name: get code
+        - name: compile
           commands:
             - checkout
             - ./get-buildroot
-        - name: build-config
-          commands:
             - ./build-config 3
-        - name: compile
-          commands:
             - ./compile 3
