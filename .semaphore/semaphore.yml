@@ -13,4 +13,4 @@ blocks:
             - checkout
             - ./get-buildroot
             - ./build-config 3
-            - ./compile 3
+            - ./compile
