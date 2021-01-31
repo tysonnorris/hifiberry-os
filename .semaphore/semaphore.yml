@@ -12,5 +12,9 @@ blocks:
           commands:
             - checkout
             - ./get-buildroot
+        - name: build-config
+          commands:
             - ./build-config 3
+        - name: compile
+          commands:
             - ./compile 3
