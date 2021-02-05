@@ -19,6 +19,9 @@ jobs:
           name: "ls"
           command: ls -l
       - run:
+          name: "cd"
+          command: cd hifiberry-os   
+      - run:
           name: "get-buildroot"
           command: ./get-buildroot
       - run:
