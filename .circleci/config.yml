@@ -11,26 +11,13 @@ jobs:
       image: ubuntu-2004:202101-01
     steps:
       - checkout:
-          path: hifiberry-os
-      - run:
-          name: "pwd"
-          command: pwd
-      - run:
-          name: "ls"
-          command: ls -l
-      - run:
-          name: "cd"
-          command: cd hifiberry-os   
-      - run:
-          name: "get-buildroot"
-          command: ./get-buildroot
-      - run:
-          name: "build-config"
-          command: ./build-config 3
-      - run:
-          name: "compile"
-          command: ./compile 3
-
+          path: hifiberry-os  
+      - run: 
+          command: |
+            cd hifiberry-os
+            ./get-buildroot
+            ./build-config 3
+            ./compile 3
 
 workflows:
   main:
