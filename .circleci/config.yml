@@ -12,6 +12,12 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "pwd"
+          command: pwd
+      - run:
+          name: "ls"
+          command: ls -l
+      - run:
           name: "get-buildroot"
           command: ./get-buildroot
       - run:
