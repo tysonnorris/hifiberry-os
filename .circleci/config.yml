@@ -9,6 +9,7 @@ jobs:
   buildhifiberry:
     machine:
       image: ubuntu-2004:202101-01
+    resource_class: xlarge
     steps:
       - checkout:
           path: hifiberry-os  
