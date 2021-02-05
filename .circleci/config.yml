@@ -14,6 +14,7 @@ jobs:
       - checkout:
           path: hifiberry-os  
       - run: 
+          no_output_timeout: 60m
           command: |
             cd hifiberry-os
             ./get-buildroot
