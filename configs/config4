@@ -1,3 +1,6 @@
+BR2_PACKAGE_NOIZEBOT=y
+
+
 #
 # Automatically generated file; DO NOT EDIT.
 # Buildroot 2019.08-rc3 Configuration
@@ -487,7 +490,7 @@ BR2_ENABLE_LOCALE_WHITELIST="C en_US"
 #
 # BR2_TARGET_TZ_INFO is not set
 BR2_ROOTFS_USERS_TABLES=""
-BR2_ROOTFS_OVERLAY=""
+BR2_ROOTFS_OVERLAY="../hifiberry-os/noizebot/buildroot/board/raspberrypi4/overlay/"
 BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi4/post-build.sh"
 BR2_ROOTFS_POST_FAKEROOT_SCRIPT=""
 BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi4/post-image.sh"

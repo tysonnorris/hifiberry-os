@@ -1,0 +1,6 @@
+config BR2_PACKAGE_NOIZEBOT
+	bool "noizebot"
+	help
+		noizebot dependencies
+	select BR2_PACKAGE_PYTHON_GPIOZERO
+	select BR2_PACKAGE_PYTHON_RPI_WS281X
