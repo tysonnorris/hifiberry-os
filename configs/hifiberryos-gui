@@ -485,7 +485,7 @@ BR2_TARGET_TZ_INFO=y
 BR2_TARGET_TZ_ZONELIST="default"
 BR2_TARGET_LOCALTIME="Etc/UTC"
 BR2_ROOTFS_USERS_TABLES=""
-BR2_ROOTFS_OVERLAY="../hifiberry-os/buildroot/board/raspberrypi3/overlay/"
+BR2_ROOTFS_OVERLAY="../hifiberry-os/buildroot/board/raspberrypi3/overlay/ ../hifiberry-os/noizebot/buildroot/board/raspberrypi3/overlay/"
 BR2_ROOTFS_POST_BUILD_SCRIPT="board/raspberrypi3/post-build.sh"
 BR2_ROOTFS_POST_FAKEROOT_SCRIPT=""
 BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi3/post-image.sh"
@@ -4497,3 +4497,9 @@ HIFIBERRY_TEST_NONE=y
 # HIFIBERRY_TEST_DACADCPRO is not set
 # HIFIBERRY_TEST_DSPDACADC is not set
 # HIFIBERRY_TEST_USB is not set
+
+
+#
+# Noizebot
+#
+BR2_PACKAGE_NOIZEBOT=y
