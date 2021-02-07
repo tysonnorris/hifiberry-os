@@ -107,3 +107,6 @@ source "$BR2_EXTERNAL_HIFIBERRY_PATH/package/python-youtube-dl/Config.in"
 
 comment "Test tools"
 source "$BR2_EXTERNAL_HIFIBERRY_PATH/package/hifiberry-test/Config.in"
+
+comment "Noizebot"
+source "$BR2_EXTERNAL_HIFIBERRY_PATH/package/noizebot/Config.in"
