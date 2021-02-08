@@ -1,4 +1,0 @@
-#!/bin/bash
-
-#setup alsa loopback device
-modprobe  snd_aloop
